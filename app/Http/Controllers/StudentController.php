@@ -8,6 +8,9 @@ use App\Department;
 
 class StudentController extends Controller
 {
+    public function test(){
+        dd ('hello');
+    }
     public function show(){
         $members= Student::all() ;
         return view('members.show', compact('members'));

@@ -10,8 +10,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', "StudentController@show");
+Route::get('/', "StudentController@test");
+Route::get('/home', "StudentController@show");
 Route::get("/addMember","StudentController@create");
 Route::post('/addMember','StudentController@add');
 Route::get("/member/delete/{member}","StudentController@delete");
